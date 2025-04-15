@@ -6,10 +6,10 @@ from PIL import Image
 # تعریف لیست خودروها و مشخصاتشان
 cars = {
     "پراید": {"consumption": 7.5, "image": "pride.jpg"},
-    "سمند": {"consumption": 8.5, "image": "samand.jpg"},
-    "دنا": {"consumption": 9.2, "image": "dana.jpg"},
-    "رانا": {"consumption": 8.2, "image": "dana.jpg"},
-    "تارا": {"consumption": 7.8, "image": "tara.jpg"}
+    "سمند": {"consumption": 8.7, "image": "samand.jpg"},
+    "دنا": {"consumption": 7.7, "image": "dana.jpg"},
+    "رانا": {"consumption":  6.6, "image": "dana.jpg"},
+    "تارا": {"consumption": 7.1, "image": "tara.jpg"}
 }
 
 st.title("شبیه‌ساز هوشمند مصرف سوخت خودرو")
