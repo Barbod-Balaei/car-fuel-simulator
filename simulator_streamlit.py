@@ -19,9 +19,9 @@ consumption = cars[car_choice]["consumption"]
 
 st.markdown(f"**مصرف سوخت هر 100 کیلومتر:** {consumption} لیتر")
 
-distance = st.number_input("مسافت سفر (کیلومتر):", min_value=0.0, value=100.0)
-speed = st.number_input("سرعت متوسط (km/h):", min_value=1.0, value=80.0)
-fuel_available = st.number_input("مقدار سوخت موجود در باک (لیتر):", min_value=0.0, value=20.0)
+distance = st.number_input("مسافت سفر (کیلومتر):", min_value=0.0)
+speed = st.number_input("سرعت متوسط (km/h):", min_value=1.0)
+fuel_available = st.number_input("مقدار سوخت موجود در باک (لیتر):", min_value=0.0)
 fuel_price = st.number_input("قیمت هر لیتر بنزین (تومان):", min_value=0.0, value=3000.0)
 
 if st.button("محاسبه"):
@@ -39,12 +39,12 @@ if st.button("محاسبه"):
         st.warning("سوخت موجود برای این سفر کافی نیست!")
 
 # نمایش تصویر خودرو
-st.markdown("### تصویر خودرو انتخاب‌شده:")
-try:
-    image = Image.open(cars[car_choice]["image"])
-    st.image(image, width=300)
-except:
-    st.info("عکس خودرو یافت نشد. لطفاً فایل تصویر را در مسیر مناسب قرار دهید.")
+#st.markdown("### تصویر خودرو انتخاب‌شده:")
+#try:
+   # image = Image.open(cars[car_choice]["image"])
+   # st.image(image, width=300)
+#except:
+   # st.info("عکس خودرو یافت نشد. لطفاً فایل تصویر را در مسیر مناسب قرار دهید.")
 
 # رسم نمودار مقایسه‌ای
 if st.button("نمایش نمودار مصرف سوخت خودروها"):
