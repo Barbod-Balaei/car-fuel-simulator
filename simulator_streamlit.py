@@ -8,6 +8,7 @@ cars = {
     "پراید": {"consumption": 7.5, "image": "pride.jpg"},
     "سمند": {"consumption": 8.5, "image": "samand.jpg"},
     "دنا": {"consumption": 9.2, "image": "dana.jpg"},
+    "رانا": {"consumption": 8.2, "image": "dana.jpg"},
     "تارا": {"consumption": 7.8, "image": "tara.jpg"}
 }
 
