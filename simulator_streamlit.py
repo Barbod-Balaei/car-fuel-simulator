@@ -7,8 +7,15 @@ from PIL import Image
 cars = {
     "پراید": {"consumption": 7.5, "image": "pride.jpg"},
     "سمند": {"consumption": 8.7, "image": "samand.jpg"},
+    "اطلس": {"consumption": 6.8, "image": "atlas.jpg"},
+    "شاهین": {"consumption": 7.2, "image": "shahin.jpg"},
     "دنا": {"consumption": 7.7, "image": "dana.jpg"},
-    "رانا": {"consumption":  6.6, "image": "dana.jpg"},
+    "تیبا": {"consumption": 6.9, "image": "tiba.jpg"},
+    "کوییک": {"consumption": 7.2, "image": "kooik.jpg"},
+    "پرشیا": {"consumption": 9.1, "image": "pershia.jpg"},
+    "پزو ۲۰۶": {"consumption": 8.9, "image": "206.jpg"},
+    "پزو ۴۰۵": {"consumption": 9.0, "image": "405.jpg"},
+    "رانا": {"consumption":  6.6, "image": "rana.jpg"},
     "تارا": {"consumption": 7.1, "image": "tara.jpg"}
 }
 
