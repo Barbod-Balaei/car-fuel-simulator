@@ -18,6 +18,17 @@ cars = {
     "رانا": {"consumption":  6.6, "image": "rana.jpg"},
     "تارا": {"consumption": 7.1, "image": "tara.jpg"}
 }
+st.markdown(
+    """
+    <style>
+    body, .stTextInput, .stSelectbox, .stNumberInput, .stButton, .stMarkdown {
+        direction: rtl;
+        text-align: right;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.title("شبیه‌ساز هوشمند مصرف سوخت خودرو")
 
