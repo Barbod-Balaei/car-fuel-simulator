@@ -19,14 +19,12 @@ cars = {
     "تارا": {"consumption": 7.1, "image": "tara.jpg"}
 }
 st.markdown(
-    """
     <style>
     body, .stTextInput, .stSelectbox, .stNumberInput, .stButton, .stMarkdown {
         direction: rtl;
         text-align: right;
     }
-    </style>
-    """,
+    </style>,
     unsafe_allow_html=True
 )
 
