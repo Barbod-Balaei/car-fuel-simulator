@@ -3,6 +3,18 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from PIL import Image
 
+st.markdown(
+    """
+    <style>
+    body, .stTextInput, .stSelectbox, .stNumberInput, .stButton, .stMarkdown {
+        direction: rtl;
+        text-align: right;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # تعریف لیست خودروها و مشخصاتشان
 cars = {
     "پراید": {"consumption": 7.5, "image": "pride.jpg"},
@@ -18,15 +30,6 @@ cars = {
     "رانا": {"consumption":  6.6, "image": "rana.jpg"},
     "تارا": {"consumption": 7.1, "image": "tara.jpg"}
 }
-st.markdown(
-    <style>
-    body, .stTextInput, .stSelectbox, .stNumberInput, .stButton, .stMarkdown {
-        direction: rtl;
-        text-align: right;
-    }
-    </style>,
-    unsafe_allow_html=True
-)
 
 st.title("شبیه‌ساز هوشمند مصرف سوخت خودرو")
 
