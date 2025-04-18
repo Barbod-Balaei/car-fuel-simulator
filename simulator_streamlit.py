@@ -56,6 +56,13 @@ if st.button("محاسبه"):
     else:
         st.warning("سوخت موجود برای این سفر کافی نیست!")
 
+st.markdown("### تصویر خودرو انتخاب‌شده:")
+try:
+    image = Image.open(cars[car_choice]["image"])
+    st.image(image, width=300)
+except:
+    st.info("عکس خودرو یافت نشد. لطفاً فایل تصویر را در مسیر مناسب قرار دهید.")    
+
 if st.button("نمایش نمودار مصرف سوخت خودروها"):
     names = list(cars.keys())
     values = [cars[name]["consumption"] for name in names]
