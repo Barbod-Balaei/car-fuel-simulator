@@ -58,12 +58,12 @@ if st.button("محاسبه"):
         st.warning("سوخت موجود برای این سفر کافی نیست!")
 
 # نمایش تصویر خودرو
-#st.markdown("### تصویر خودرو انتخاب‌شده:")
-#try:
-   # image = Image.open(cars[car_choice]["image"])
-   # st.image(image, width=300)
-#except:
-   # st.info("عکس خودرو یافت نشد. لطفاً فایل تصویر را در مسیر مناسب قرار دهید.")
+st.markdown("### تصویر خودرو انتخاب‌شده:")
+try:
+    image = Image.open(cars[car_choice]["image"])
+    st.image(image, width=300)
+except:
+    st.info("عکس خودرو یافت نشد. لطفاً فایل تصویر را در مسیر مناسب قرار دهید.")
 
 # رسم نمودار مقایسه‌ای
 if st.button("نمایش نمودار مصرف سوخت خودروها"):
