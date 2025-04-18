@@ -28,19 +28,19 @@ cars = {
     "پزو ۴۰۵": {"consumption": 9.0,"image": "405.jpg"},
     "رانا": {"consumption":  6.6,"image": "rana.jpg"},
     "تارا": {"consumption": 7.1 , "image": "tara.jpg"}
-}
+}   
+    
+st.title("شبیه‌ساز هوشمند مصرف سوخت خودرو")
+
+car_choice = st.selectbox("لطفاً خودرو را انتخاب کنید:", list(cars.keys()))
+consumption = cars[car_choice]["consumption"]
 
 st.markdown("### تصویر خودرو انتخاب‌شده:")
 try:
     image = Image.open(cars[car_choice]["image"])
     st.image(image, width=300)
 except:
-    st.info("عکس خودرو یافت نشد. لطفاً فایل تصویر را در مسیر مناسب قرار دهید.")    
-    
-st.title("شبیه‌ساز هوشمند مصرف سوخت خودرو")
-
-car_choice = st.selectbox("لطفاً خودرو را انتخاب کنید:", list(cars.keys()))
-consumption = cars[car_choice]["consumption"]
+    st.info("عکس خودرو یافت نشد. لطفاً فایل تصویر را در مسیر مناسب قرار دهید.") 
 
 st.markdown(f"**مصرف سوخت هر 100 کیلومتر:** {consumption} لیتر")
 
