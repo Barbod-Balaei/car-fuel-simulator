@@ -27,7 +27,7 @@ cars = {
     "پزو ۲۰۶": {"consumption": 8.9},
     "پزو ۴۰۵": {"consumption": 9.0},
     "رانا": {"consumption":  6.6},
-    "تارا": {"consumption": 7.1}
+    "تارا": {"consumption": 7.1 , "image": "tara.jpg"}
 }
 
 st.title("شبیه‌ساز هوشمند مصرف سوخت خودرو")
