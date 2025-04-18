@@ -21,7 +21,7 @@ cars = {
     "سمند": {"consumption": 8.7, "image": "samand.jpg"},
     "اطلس": {"consumption": 6.8, "image": "atlas.jpg"},
     "شاهین": {"consumption": 7.2, "image": "shahin.jpg"},
-    "دنا": {"consumption": 7.7, "image": "dana.jpg"},
+    "دنا": {"consumption": 7.7, "image": "dena.jpg"},
     "تیبا": {"consumption": 6.9, "image": "tiba.jpg"},
     "کوییک": {"consumption": 7.2, "image": "kooik.jpg"},
     "پرشیا": {"consumption": 9.1, "image": "pershia.jpg"},
