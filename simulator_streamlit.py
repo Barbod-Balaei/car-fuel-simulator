@@ -30,6 +30,13 @@ cars = {
     "تارا": {"consumption": 7.1 , "image": "tara.jpg"}
 }
 
+st.markdown("### تصویر خودرو انتخاب‌شده:")
+try:
+    image = Image.open(cars[car_choice]["image"])
+    st.image(image, width=300)
+except:
+    st.info("عکس خودرو یافت نشد. لطفاً فایل تصویر را در مسیر مناسب قرار دهید.")    
+    
 st.title("شبیه‌ساز هوشمند مصرف سوخت خودرو")
 
 car_choice = st.selectbox("لطفاً خودرو را انتخاب کنید:", list(cars.keys()))
@@ -55,13 +62,6 @@ if st.button("محاسبه"):
         st.success("سوخت موجود برای سفر کافی است.")
     else:
         st.warning("سوخت موجود برای این سفر کافی نیست!")
-
-st.markdown("### تصویر خودرو انتخاب‌شده:")
-try:
-    image = Image.open(cars[car_choice]["image"])
-    st.image(image, width=300)
-except:
-    st.info("عکس خودرو یافت نشد. لطفاً فایل تصویر را در مسیر مناسب قرار دهید.")    
 
 if st.button("نمایش نمودار مصرف سوخت خودروها"):
     names = list(cars.keys())
