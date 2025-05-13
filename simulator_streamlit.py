@@ -45,7 +45,7 @@ except:
 st.markdown(f"**مصرف سوخت هر 100 کیلومتر:** {consumption} لیتر")
 
 distance = st.number_input("مسافت سفر (کیلومتر):", min_value=0.0)
-speed = st.number_input("سرعت متوسط (km/h):", min_value=1.0)
+speed = st.number_input("سرعت متوسط (km/h):", min_value=0.0)
 fuel_available = st.number_input("مقدار سوخت موجود در باک (لیتر):", min_value=0.0)
 fuel_price = st.number_input("قیمت هر لیتر بنزین (تومان):", min_value=0.0, value=3000.0)
 
